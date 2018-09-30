@@ -33,4 +33,4 @@ Route::put('Films','FilmsController@store');
 
 
 //delete  new film
-Route::get('Films','FilmsController@destroy');
+Route::delete('Films','FilmsController@destroy');

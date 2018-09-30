@@ -7,12 +7,12 @@ $factory->define(App\Films::class, function (Faker $faker) {
         //
         'name' => $faker->text(20),
         'description' => $faker->text(200),
-        'release_date' => $faker->year(),
+        'release_date' => $faker->dateTime(),
         'rating' => $faker->numberBetween($min = 1, $max = 5) ,
-        'ticket_price' => $faker->integer('200'),
-        'country' =>'INDIA',
+        'ticket_price' => $faker->numberBetween(110,250),
+        'country' =>$faker->country,
         'genres' => $faker->text(15),
-        'photo' => $faker->image_url(20),
+        'photo' => $faker->imageUrl($width = 200, $height = 200)
 
 
 
