@@ -51,6 +51,8 @@ class FilmsController extends Controller
      */
     public function show($id)
     {
+        $film = Films::find($id);
+        return new FilmResource($film);
         //
     }
 

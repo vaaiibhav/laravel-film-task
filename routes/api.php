@@ -22,7 +22,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::get('Films','FilmsController@index');
 
 //List Single Film
-Route::get('Films/{id}','FilmsController@show');
+Route::get('Films/{id?}','FilmsController@show');
 
 //create new film
 Route::post('Films','FilmsController@store');

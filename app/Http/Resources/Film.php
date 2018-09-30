@@ -16,4 +16,5 @@ class Film extends JsonResource
     {
         return parent::toArray($request);
     }
+    
 }
